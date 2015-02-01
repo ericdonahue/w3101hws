@@ -11,7 +11,7 @@
   chai.use(sinonChai);  // adds convenient assertions for sinon
 
 
-  describe.only('sumArray', function() {
+  describe('sumArray', function() {
     it('sums an array of integers', function() {
       var ints = [1,2,3,4,5,6,7,8,9,10];
       expect(sumArray(ints)).to.equal(55);
