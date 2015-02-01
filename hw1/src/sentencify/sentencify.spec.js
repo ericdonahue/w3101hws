@@ -4,7 +4,7 @@
   var sentencify = require('./sentencify'),
       expect     = require('chai').expect;
 
-  describe.only('sentencify', function() {
+  describe('sentencify', function() {
     it('should be defined.', function() {
       expect(sentencify).to.exist();  //  'Method sentencify not defined.'
     });
