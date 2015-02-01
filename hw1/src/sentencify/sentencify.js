@@ -1,13 +1,17 @@
 (function () {
-  'use strict';
+ 'use strict';
 
   var sentencify = function (words) {
-    var sentence = words.reduce(function(a, b) {
-	return a + ' ' + b;
+    var sentence;
+    var arrayLength = words.length;
+    if (arrayLength === 0) {
+        return '';
+    }
+    sentence = words.reduce(function(a, b) {
+        return a + ' ' + b;
     });
     return sentence;
-
   };
 
-  module.exports = sentencify;  // DO NOT CHANGE THIS
-})();
+ module.exports = sentencify;  // DO NOT CHANGE THIS
+ })();
